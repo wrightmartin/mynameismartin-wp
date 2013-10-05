@@ -1,0 +1,203 @@
+@import "mixins.scss";
+
+
+
+body {
+	font-size: 1.3125em; /*21px*/
+}
+
+p {
+	@include prefix(hyphens, "none");
+}
+
+.active nav ul {
+	width: 45%;
+}
+
+a.home-link {
+	height: 5.714285714em;
+	width: 5.714285714em;
+	@include prefix(background-size, 5.714285714em);
+}
+
+.next-prev-controls {
+	.arrow {
+
+	}
+	.right-arrow {
+
+		margin-left: .66em;
+	}
+	.left-arrow {
+		/* LEFT ARROW / NEWER */
+
+	}
+}
+.page-title-block {
+	margin-top: 10em;
+}
+
+.page-title-block.photo {
+	border-bottom: none;
+	@include prefix(background-size, cover);
+	height: 25em;
+	.arrow a{
+			background-position-y: -71px;
+	}
+}
+
+.photo-overlay {
+	height: 25em;
+}
+
+.home .page-title-block {
+	background-image: url(../img/content.jpg);
+}
+
+.intro {
+	top: 11em;
+	h1 {
+		font-size: 2em;
+	}
+	i {
+		height: .4em;
+		width: 3em;
+	}
+}
+
+@media all and (min-width: 34.375em) {
+	.intro {
+
+	}
+}
+
+.single-project {
+	article {
+		margin-top: 0 !important;
+	}
+	.main-photo.photo {
+		min-height: 240px;
+	}
+}
+
+.home .blog-posts li {
+	@include twocolumn;
+}
+
+
+.home-portfolio {
+	padding: 3em 0 2em;
+}
+
+.portfolio-list {
+	.project-details {
+		h3 {
+			font-size: 1.3em;
+			margin-top: 2.5em;
+		}
+	}
+}
+
+blockquote {
+	width: 100%;
+	margin-left: -5%;
+}
+
+.single-project .content-body {
+	padding: 1em 0 1em;
+}
+
+
+.content-body img.massive {
+	margin-left: -164px;
+	width: 116.172106824926%;
+	max-width: 116.172106824926%;
+}
+
+.blog-posts {
+
+}
+
+.screenshot {
+	@include twoprimary-two;
+}
+
+.logos {
+	@include twoprimary-one;
+}
+
+.project-desc {
+	margin-bottom: 3em;
+}
+
+.project-body {
+
+}
+
+
+ .portfolio-page {
+	 width: 100%;
+	 margin: 3em 0 3em;
+ }
+
+.display-screen {
+ 	width: 74.25%;
+ 	margin: 0 12.875%;
+ 	margin-bottom: 2em;
+}
+
+.overshare {
+	margin-bottom: 2em;
+}
+
+.overshare span {
+	display: inline;
+}
+
+.overshare i {
+	font-size: 4em;
+}
+
+
+.twocol {
+	@include twocolumn;
+}
+
+
+.cols {
+	@include prefix(column-count, "2");
+	@include prefix(column-gap, "5%");
+}
+
+img.pull-left,
+img.pull-right {
+	width: 48.35%;
+	float: right;
+	margin-left: 3%;
+	margin-bottom: 1em;
+}
+
+.hide-small-screen {
+	 display: block;
+	 height: auto;
+	 position: relative;
+ }
+
+ .error404 {
+ 	.error {
+ 		top: 12em;
+ 	}
+ }
+
+
+
+/*
+ * For sale
+ */
+
+.for-sale-body {
+	font-size: .761904762em;
+	li {
+		@include twocolumn;
+	}
+}

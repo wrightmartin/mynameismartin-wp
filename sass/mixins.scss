@@ -1,0 +1,149 @@
+
+ 
+/*
+ * Variables
+ */
+
+$grey: #999;
+$darkgrey: #333;
+$blue: #0ABDCF;
+$red: #d85252;
+$lightgrey: #E9E9E9;
+$offwhite: #f4f4f4;
+$darkblue: #002f32;
+
+$lastfm: #db1302;
+$dribbble: #ea4c89;
+$twitter:  #2ca9e1;
+$flickr: #0063dc;
+$instagram: #a47e5b;
+$rdio: #358adb;
+$facebook: #3B5998;
+
+
+@mixin button {
+	color: #fff;
+	background: $red;
+	border: none;
+	display: inline-block;
+	font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: .52em;
+	letter-spacing: 2px;
+	line-height: 1em;
+	padding: 1.3em 1.8em;
+	text-transform: uppercase;
+	width: auto;
+	-webkit-appearance: none;
+	
+	
+	&:hover,
+	&:focus,
+	&:active { 
+		background: $blue;
+	}
+}
+
+
+@mixin group {
+	&:before,
+	&:after {
+    	content: "";
+    	display: table;
+    }
+    &:after {
+	    clear: both;
+    } 
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+@mixin meta {
+	text-transform: uppercase;
+	color: $grey;
+	font-size: 0.66666666666667em;
+	font-weight: 600;
+}
+
+@mixin nova {
+	font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+@mixin adelle {
+	font-family: "adelle", Georgia, Times, "Times New Roman" serif;
+}
+
+
+@mixin subhead {
+	font-size: .777777778em;
+	text-transform: uppercase;
+	color: $grey;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+@mixin twocolumn($width: 49%, $gutter: 2%) {
+	  width: $width;
+	  margin-right: $gutter;
+	  float: left;
+	  &:nth-child(even) {
+		  margin-right: 0;
+	  }
+}
+
+@mixin threecolumn($width: 31.333333333%, $gutter: 3%) {
+	  width: $width;
+	  margin-right: $gutter;
+	  float: left;
+	  &:nth-child(even) {
+		margin-right: $gutter;	//reset what was set in global.css
+		}
+	  &:nth-child(3n+3) {
+		  margin-right: 0;
+	  }
+}
+
+@mixin fourcolumn($width: 23.5%, $gutter: 2%) {
+	width: $width;
+	float: left;
+	margin-right: $gutter;
+	&:nth-child(even) {
+		margin-right: $gutter;	//reset what was set in global.css
+	}
+	&:nth-child(4n+4){
+		margin-right: 0;
+	}
+	
+}
+
+@mixin twoprimary-one {
+	width: 35.625%;
+	margin-right: 3%;
+	float: left;
+}
+
+@mixin twoprimary-two {
+	width: 61.375%;
+	float: left;
+}
+
+@mixin page {
+	width: 94%;
+	padding: 1em 3%;
+}
+
+@mixin unstyled-list {
+	list-style: none outside none;
+	padding-left: 0;
+}
+
+$prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
+@mixin prefix($property, $value) { 
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: #{$value};
+    }
+}
+
+@mixin image-replacement {
+	text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}

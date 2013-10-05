@@ -1,0 +1,241 @@
+@import "mixins.scss";
+
+@mixin sidebar {
+	width: 22.75%;
+	margin-left: 3%;
+	float: left;
+}
+
+header {
+	/*border-bottom: 1px solid #e9e9e9;
+	border-bottom: 1px solid rgba(0,0,0,0.1);	height: 4em;*/
+
+
+}
+
+header {
+
+}
+
+a.home-link {
+	z-index: 100;
+	top: 1em;
+}
+
+.sitenav {
+	font-size: 1em;
+	position: absolute;
+	top: 2em;
+	right: 0;
+	height: auto;
+	background: transparent;
+
+	width: 100%;
+	ul {
+		text-align: right;
+		margin: .25em auto;
+		width: 94%;
+	}
+	li {
+		display: inline-block;
+		text-align: left;
+		margin-right: 0.25em;
+	}
+	a:link,
+	a:visited {
+		background-color: transparent;
+		border-color: transparent;
+		color: #fff;
+		@include prefix(text-shadow, 0 1px 1px #333);
+		@include nova;
+		.sub {
+			@include prefix(transition, opacity 0.3s ease-out);
+			opacity: 0.8;
+		}
+	}
+
+	a:hover,
+	a:active,
+	a:focus {
+		background: transparent;
+		border-color: rgba(255,255,255,0.33);
+		.sub {
+			opacity: 1;
+			@include prefix(transition, opacity 0.3s ease-in);
+		}
+	}
+
+	.main {
+		letter-spacing: 0.025em;
+	}
+
+	.close-menu {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+#no-photo {
+	.sitenav {
+		a {
+			color: #333;
+			@include prefix(text-shadow, none);
+		}
+		.sub {
+			color: #333;
+		}
+	}
+}
+
+a.menu {
+	display: none;
+	visibility: hidden;
+}
+
+.page-title-block {
+
+	.main-title {
+		&.blog-title {
+			margin-left: 25%;
+		}
+	}
+}
+
+.page-title-block.photo {
+
+	.main-title {
+		font-size: 2.619047619em;
+	}
+	@media all and (min-height: 900px) {
+		height: 30em;
+	}
+}
+
+.photo-overlay {
+	@media all and (min-height: 900px) {
+		height: 30em;
+	}
+}
+
+.intro {
+	top: 13em;
+	h1 {
+		font-size: 2.857142857em;
+	}
+	i {
+		height: .55em;
+		width: 3.5em;
+	}
+}
+
+
+.portfolio-list li,
+.home-work-item,{
+	@include fourcolumn(24.25%, 1%);
+}
+
+.home .portfolio-list li {
+	margin-bottom: 0;
+}
+
+.portfolio-list {
+	.project-details {
+		h3 {
+			margin-top: 1em;
+		}
+	}
+}
+
+
+.about-project {
+	@include twoprimary-one;
+}
+
+.project-images {
+	@include twoprimary-two;
+	padding: 0;
+	margin: 0;
+	clear: none;
+}
+
+.content-body {
+	width: 55.375%;
+}
+
+.blog .content-body,
+.single .content-body,
+.archive .content-body {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.desc {
+	width: 48.5%;
+	float: left;
+	margin-left: 3%;
+}
+
+.overshare i {
+	font-size: 6em;
+}
+
+.social,
+.sidebar {
+	@include sidebar;
+}
+
+.torchbox-work-list ul {
+	max-width: 74.2434%;
+}
+
+img.pull-left {
+	margin-left: -28.5%;
+	margin-right: 5.8%;
+	width: 64%;
+	float: left;
+}
+
+img.pull-right {
+	float: right;
+	margin-right: -52%;
+	margin-left: 5.8%;
+	width: 70%;
+}
+blockquote {
+	width: 130%;
+	margin-left: -10%;
+}
+
+footer {
+	.about-me {
+		img {
+			width: 12.8619%;
+		}
+	}
+}
+
+.error404 {
+	.page-title-block.photo {
+		height: 35em;
+	}
+	.photo-overlay {
+		height: 35em;
+	}
+	.error {
+		top: 14em;
+		h1 {
+			font-size: 6em;
+		}
+	}
+
+}
+/*
+ * For sale
+ */
+
+.for-sale-body {
+	li {
+		@include threecolumn;
+	}
+}
+
