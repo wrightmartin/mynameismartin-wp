@@ -39,9 +39,9 @@
 
 	add_filter( 'body_class', 'add_slug_to_body_class' );
 
-	add_filter('next_posts_link_attributes', 'next_posts_link_attributes');
+	add_filter('next_post_link_attributes', 'post_link_attributes_1');
 
-	add_filter('previous_posts_link_attributes', 'previous_posts_link_attributes');
+	add_filter('previous_post_link_attributes', 'post_link_attributes_2');
 
 	/* ========================================================================================================================
 
@@ -170,13 +170,12 @@ function posts_link_attributes_2() {
  * Fix for no rel="" on navigation links
  */
 
-add_filter('next_post_link_attributes', 'post_link_attributes_1');
-add_filter('previous_post_link_attributes', 'post_link_attributes_2');
 
 function post_link_attributes_1() {
     $attr = 'rel="next" class="arrow right-arrow"';
     return $attr;
 }
+
 function post_link_attributes_2() {
     $attr = 'rel="prev" class="arrow left-arrow"';
     return $attr;

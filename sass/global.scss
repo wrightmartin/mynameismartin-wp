@@ -975,6 +975,9 @@ a:hover.facebook i {
  	ul {
 	 	@include unstyled-list;
  	}
+ 	li {
+ 		margin-bottom: 1em;
+ 	}
 }
 
 .flexslider {
@@ -1004,42 +1007,6 @@ a.view-work {
 	width: 66%;
 }
 
-.torchbox-work-list {
-	width: 100%;
-	float: left;
-	border-top: 1px solid $lightgrey;
-	padding-top: 2em;
-
-
-}
-
-.torchbox-work-list .project-intro {
-	text-align: center;
-	width: 100%;
-	float: left;
-	color: $grey;
-}
-
-.torchbox-work-list ul {
-	list-style: none outside none;
-	margin: 0 auto 2em;
-	text-align: center;
-	font-family: "adelle", serif;
-	font-weight: 300;
-	padding: 0;
-}
-
-.torchbox-work-list li {
-	display: inline;
-	color: #777;
-	&:after {
-		content:" • ";
-		color: transparentize($red, 0.15);
-	}
-	&:last-child:after {
-		content: " ";
-	}
-}
 
 .circle {
 	border-radius: 50%;

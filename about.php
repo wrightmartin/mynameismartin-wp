@@ -56,7 +56,7 @@
 		     	<p>Type is set in <a href="https://typekit.com/fonts/proxima-nova">Proxima Nova</a> &amp; <a href="https://typekit.com/fonts/ff-meta-serif-web-pro">FF Meta Serif</a>, served by <a href="http://typekit.com">Typekit</a> and laid out in a fluid grid with a little help from <a href="http://gridsetapp.com">Gridset</a>*.</p>
 
 		     	</div>
-		     	<small>* add ?gridset=show to the end of any URL on my site to see the grid</small>
+
 	    	</div>
     	</div>
      </section>

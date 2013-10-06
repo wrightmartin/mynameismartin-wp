@@ -1500,6 +1500,8 @@ a:hover.facebook i {
   .project-images ul {
     list-style: none outside none;
     padding-left: 0; }
+  .project-images li {
+    margin-bottom: 1em; }
 
 .flexslider {
   margin: 0 auto;
@@ -1528,35 +1530,6 @@ a.view-work {
 .feature-block .feature-desc {
   float: right;
   width: 66%; }
-
-.torchbox-work-list {
-  width: 100%;
-  float: left;
-  border-top: 1px solid #e9e9e9;
-  padding-top: 2em; }
-
-.torchbox-work-list .project-intro {
-  text-align: center;
-  width: 100%;
-  float: left;
-  color: #999999; }
-
-.torchbox-work-list ul {
-  list-style: none outside none;
-  margin: 0 auto 2em;
-  text-align: center;
-  font-family: "adelle", serif;
-  font-weight: 300;
-  padding: 0; }
-
-.torchbox-work-list li {
-  display: inline;
-  color:   #777777; }
-  .torchbox-work-list li:after {
-    content: " • ";
-    color: rgba(216, 82, 82, 0.85); }
-  .torchbox-work-list li:last-child:after {
-    content: " "; }
 
 .circle {
   border-radius: 50%; }
