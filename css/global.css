@@ -568,6 +568,14 @@ h1 {
 h4, h5, h6 {
   font-weight: 600; }
 
+a {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
 a:link,
 a:visited {
   color: #d85252;
