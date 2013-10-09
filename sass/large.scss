@@ -96,7 +96,7 @@ a.menu {
 
 	.main-title {
 		&.blog-title {
-			margin-left: 25%;
+			margin-left: 25.7238%;
 		}
 	}
 }
@@ -159,20 +159,41 @@ a.menu {
 }
 
 .content-body {
-	width: 55.375%;
+	width: 48.4477%;;
+	float: right;
+	margin-right: 25.7238%;
 }
 
-.blog .content-body,
-.single .content-body,
-.archive .content-body {
-	width: 50%;
-	margin: 0 auto;
+.about {
+	.content-body {
+		float: left;
+	}
 }
+
+.blog-aside {
+	float: left;
+	width: 22.7238%;
+	padding-top: 1em;
+}
+
+.meta-item {
+	display: block;
+}
+
+//.blog .content-body,
+//.single .content-body,
+//.archive .content-body {
+//	margin: 0 auto;
+//}
 
 .desc {
 	width: 48.5%;
 	float: left;
 	margin-left: 3%;
+}
+
+.overshare {
+	clear: both;
 }
 
 .overshare i {
@@ -229,13 +250,9 @@ footer {
 	}
 
 }
-/*
- * For sale
- */
 
-.for-sale-body {
-	li {
-		@include threecolumn;
-	}
+
+.hide-large {
+	display: none;
 }
 

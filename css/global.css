@@ -533,7 +533,8 @@ body {
   font-family: "ff-meta-serif-web-pro", Georgia, "Times New Roman", Times, serif;
   color: #333333;
   font-size: 1em;
-  background: #333; }
+  background: #333;
+  border-top: 3px solid #0abdcf; }
   body.active {
     margin-left: -60%; }
 
@@ -927,6 +928,7 @@ h1.blog-post-title {
   .page-title-block.photo {
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     height: 20em;
     margin-top: 0; }
     .page-title-block.photo .main-title {
@@ -949,6 +951,9 @@ h1.blog-post-title {
   left: 0;
   height: 20em;
   opacity: 0.25; }
+
+.home .photo-overlay {
+  top: 3px; }
 
 .home .page-title-block {
   background-image: url(../img/content-small.jpg);
@@ -1202,7 +1207,7 @@ footer a[rel="author"] {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
   background: #fff;
-  padding: 1em 0 2em; }
+  padding: 1em 0 1em; }
   .content-body:before, .content-body:after {
     content: "";
     display: table; }
@@ -1212,7 +1217,7 @@ footer a[rel="author"] {
     padding-bottom: 0; }
 
 .single-project .content-body {
-  padding: 1em 0 1em; }
+  padding: 1em 0 0; }
 
 .content-body p.intro-text {
   font-size: 1.33333333333333em;
@@ -1239,6 +1244,9 @@ aside h2 {
 .content-body li:before {
   content: " • ";
   color: rgba(216, 82, 82, 0.85); }
+
+.blog-aside {
+  margin-bottom: 2em; }
 
 /*
  * About me

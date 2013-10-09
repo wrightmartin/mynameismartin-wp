@@ -23,7 +23,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="author" href="https://plus.google.com/u/0/116176995575308074443/posts"/>
 
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
+		<link rel="shortcut icon" href="<?php bloginfo( 'url' ); ?>/favicon.ico"/>
 
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/webfonts/ss-social.css" media="all">
 		<link rel="stylesheet" href="https://get.gridsetapp.com/5488/" />

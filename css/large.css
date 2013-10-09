@@ -79,7 +79,7 @@ a.menu {
   visibility: hidden; }
 
 .page-title-block .main-title.blog-title {
-  margin-left: 25%; }
+  margin-left: 25.7238%; }
 
 .page-title-block.photo .main-title {
   font-size: 2.619047619em; }
@@ -130,18 +130,28 @@ a.menu {
   clear: none; }
 
 .content-body {
-  width: 55.375%; }
+  width: 48.4477%;
+  float: right;
+  margin-right: 25.7238%; }
 
-.blog .content-body,
-.single .content-body,
-.archive .content-body {
-  width: 50%;
-  margin: 0 auto; }
+.about .content-body {
+  float: left; }
+
+.blog-aside {
+  float: left;
+  width: 22.7238%;
+  padding-top: 1em; }
+
+.meta-item {
+  display: block; }
 
 .desc {
   width: 48.5%;
   float: left;
   margin-left: 3%; }
+
+.overshare {
+  clear: both; }
 
 .overshare i {
   font-size: 6em; }
@@ -183,14 +193,5 @@ footer .about-me img {
   .error404 .error h1 {
     font-size: 6em; }
 
-/*
- * For sale
- */
-.for-sale-body li {
-  width: 31.33333%;
-  margin-right: 3%;
-  float: left; }
-  .for-sale-body li:nth-child(even) {
-    margin-right: 3%; }
-  .for-sale-body li:nth-child(3n+3) {
-    margin-right: 0; }
+.hide-large {
+  display: none; }

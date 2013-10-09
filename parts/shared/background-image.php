@@ -32,15 +32,18 @@
 
 
     	  <div class="container">
-    	  		<?php if (get_post_type() == 'post') { ?>
+    	  		<?php if (get_post_type() == 'post' && is_single() )  { ?>
                     <h1 class="main-title blog-title"><?php the_title(); ?></h1>
-                <?php } elseif (is_404()) { ?>
+                <?php } elseif (is_404() ) { ?>
+
                     <div class="container">
                         <div class="error">
                             <h1>404</h1>
                             <p>A total clustercuss for everybody</p>
                         </div>
                     </div>
+                <?php } elseif ( is_category() ) { ?>
+                    <h1 class="main-title"><?php echo single_cat_title( '', false ); ?></h1>
     	  		<?php } else { ?>
     	  			<h1 class="main-title"><?php the_title(); ?></h1>
     	  		<?php } ?>

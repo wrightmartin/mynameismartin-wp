@@ -13,6 +13,7 @@ body {
 	color: $darkgrey;
 	font-size: 1em;
 	background: #333;
+	border-top: 3px solid $blue;
 	&.active {
 		margin-left: -60%;
 	}
@@ -324,6 +325,7 @@ h1.blog-post-title {
 	position: relative;
 	@include prefix(background-size, cover);
 	background-repeat: repeat;
+
 	height: auto;
 	margin-top: 6em;
 	.container {
@@ -348,6 +350,7 @@ h1.blog-post-title {
 	&.photo {
 		background-position: center center;
 		background-repeat: no-repeat;
+		background-attachment: scroll;
 		height: 20em;
 		margin-top: 0;
 		.main-title {
@@ -374,10 +377,16 @@ h1.blog-post-title {
 	opacity: 0.25;
 }
 
+.home .photo-overlay {
+	top: 3px;
+}
+
+
  .home .page-title-block {
 	background-image:url(../img/content-small.jpg);
 	background-position: center top;
 }
+
 
 
 
@@ -656,7 +665,7 @@ footer a[rel="author"] {
 .content-body {
 	@include group;
 	background: #fff;
-	padding: 1em 0 2em;
+	padding: 1em 0 1em;
 	&.blog-posts {
 		padding-bottom: 0;
 	}
@@ -664,7 +673,7 @@ footer a[rel="author"] {
 
 
 .single-project .content-body {
-	padding: 1em 0 1em;
+	padding: 1em 0 0;
 }
 
 .content-body p.intro-text {
@@ -685,6 +694,7 @@ aside h2 {
 	@include subhead;
 }
 
+
 .content-body ul {
 	list-style: none outside none
 }
@@ -696,6 +706,12 @@ aside h2 {
 		color: transparentize($red, 0.15);
 	}
 }
+
+.blog-aside {
+	margin-bottom: 2em;
+}
+
+
 
 /*
  * About me

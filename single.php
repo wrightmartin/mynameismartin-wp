@@ -24,9 +24,7 @@
     <div class="container">
 
 	<article>
-		<aside class="">
 
-	 	</aside>
 
 	 	<section class="content-body" role="main">
 
@@ -34,13 +32,15 @@
 
 
 			<?php the_content(); ?>
-			<p class="meta">
-				<time class="date" pubdate datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_date(); ?></time> //
-				<span class="posted">Posted in <?php mynameismartin_posted_in() ?></span>
-			</p>
+
 
 		</section>
-
+		<aside class="blog-aside">
+			<div class="meta">
+				<time class="date meta-item" pubdate datetime="<?php the_time( 'Y-m-d' ); ?>"><?php the_date(); ?></time> <span class="hide-large">//</span>
+				<span class="posted meta-item">Posted in <?php mynameismartin_posted_in() ?></span>
+			</div>
+	 	</aside>
 
 
 </article>

@@ -17,7 +17,7 @@
     <div class="container">
     <article>
 	    <section class="content-body blog-posts blog" role="main">
-	 		<h1 class="main-title"><?php echo single_cat_title( '', false ); ?></h1>
+
 <ol class="list-of-posts">
 <?php while ( have_posts() ) : the_post(); ?>
 	<li class="post">
