@@ -32,13 +32,13 @@
      </article>
      <section class="overshare">
 			<ul>
-				<li><a href="http://twitter.com/wrightmartin" class="twitter"><i class="ss-icon ss-social-circle">twitter</i> <span>Tweeting at Twitter</span></a></li>
-		    	<li><a href="http://dribbble.com/wrightmartin" class="dribbble"><i class="ss-icon ss-social-circle">dribbble</i> <span>Shots at Dribbble</span></a></li>
-		    	<li><a href="http://flickr.com/photos/skip694" class="flickr"><i class="ss-icon ss-social-circle">flickr</i> <span>Photos on Flickr</span></a></li>
-		    	<li><a href="http://www.last.fm/user/Johnny-5" class="lastfm"><i class="ss-icon ss-social-circle">lastfm</i> <span>Music on Last.fm</span></a></li>
-		    	<li><a href="http://instagram.com/mynameismartin/" class="instagram"><i class="ss-icon ss-social-circle">instagram</i> <span>Filters on Instagram</span></a></li>
-		    	<li><a href="http://www.rdio.com/people/wrightmartin/" class="rdio"><i class="ss-icon ss-social-circle">rdio</i> <span>Streaming on Rdio</span></a></li>
-		    	<li><a href="https://www.facebook.com/thenameismartin" class="facebook"><i class="ss-icon ss-social-circle">facebook</i> <span>Liking on Facebook</span></a></li>
+				<li><a href="http://twitter.com/wrightmartin" class="twitter"><i class="ss-icon ">twitter</i></a></li>
+		    	<li><a href="http://dribbble.com/wrightmartin" class="dribbble"><i class="ss-icon ">dribbble</i></a></li>
+		    	<li><a href="http://flickr.com/photos/skip694" class="flickr"><i class="ss-icon ">flickr</i></a></li>
+		    	<li><a href="http://www.last.fm/user/Johnny-5" class="lastfm"><i class="ss-icon">lastfm</i></a></li>
+		    	<li><a href="http://instagram.com/mynameismartin/" class="instagram"><i class="ss-icon ">instagram</i></a></li>
+		    	<li><a href="http://www.rdio.com/people/wrightmartin/" class="rdio"><i class="ss-icon ">rdio</i></a></li>
+		    	<li><a href="https://www.facebook.com/thenameismartin" class="facebook"><i class="ss-icon ">facebook</i></a></li>
 
 
 			</ul>

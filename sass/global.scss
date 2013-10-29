@@ -1,8 +1,16 @@
+@charset "UTF-8";
+
 @import "normalize.scss";
 @import "mixins.scss";
 /*
  * MYNAMEISMARTIN.COM STYLES
  */
+
+
+::selection {
+        background-color: $red;
+        color: #fff;
+ }
 
 html {
 
@@ -129,7 +137,7 @@ header {
 	top: 0;
 	z-index: 100;
 	right: -100%;
-	@include prefix(transition, right 0.2s ease-in);
+	@include prefix(transition, right 0.3s ease-in-out);
 	.close-menu {
 		position: absolute;
 		top: .25em;
@@ -141,6 +149,7 @@ header {
 		height: 0.9375em;
 		width: 0.9375em;
 		padding: 0.25em 0.375em;
+		&:focus,
 		&:hover {
 			background: transparent url(../img/close@2.png) center center no-repeat;
 			@include prefix(background-size, 0.9375em);
@@ -164,6 +173,9 @@ header {
 		border-color: transparent;
 		padding: 0.5em 0.75em;
 		display: block;
+		@include nova;
+		letter-spacing: 1px;
+		&:focus,
 		&:hover {
 			background: $red;
 		}
@@ -173,11 +185,10 @@ header {
 	}
 	.sub {
 		color: #fff;
-		opacity: 0.6;
-		text-transform: uppercase;
 		font-size: 0.66666666666667em;
 		font-weight: 600;
-		letter-spacing: 1px;
+		text-transform: uppercase;
+		opacity: 0.7
 	}
 
 }
@@ -185,7 +196,7 @@ header {
 .open-menu {
 	.sitenav {
 		right: 0;
-		@include prefix(transition, right 0.2s ease-out);
+		@include prefix(transition, right 0.3s ease-in-out);
 	}
 
 }
@@ -350,7 +361,7 @@ h1.blog-post-title {
 	&.photo {
 		background-position: center center;
 		background-repeat: no-repeat;
-		background-attachment: scroll;
+		@include prefix(background-size, cover);
 		height: 20em;
 		margin-top: 0;
 		.main-title {
@@ -409,6 +420,17 @@ footer {
 	padding-bottom: 2em;
 	height: auto;
 	font-size: 0.85714285714286em;
+	@include nova;
+	a:link,
+	a:visited {
+		color: #fff;
+		border-color: transparent;
+
+	}
+	a:hover,
+	a:focus {
+		color: $blue;
+	}
 }
 
 
@@ -421,33 +443,26 @@ footer p {
 	margin-bottom: 0.25em;
 }
 
-footer a:link {
-	border-color: #666;
-}
-
 footer a[rel="author"] {
-	@include meta;
-	@include nova;
-	border: none;
-	&:hover {
-			color: #fff;
-	}
+
 }
 
 
-.social {
+.footer-social {
 	width: 73.5%;
 	margin-left: 26.5%;
 }
 
-.social a {
-	display: inline-block;
+.footer-social a {
 	font-size: 2.5em;
 	line-height: 1em;
 	border: none;
-	margin-right: 0.3em;
-	margin-top: 0.1em;
+	color: #fff;
+	margin-right: .33em;
+
 }
+
+
 
 .about-me img {
 	border-radius: 50%;
@@ -460,7 +475,15 @@ footer a[rel="author"] {
 	float: left;
 	width: 73.5%;
 	margin-left: 3%;
-
+	a {
+		@include meta;
+			@include nova;
+			border: none;
+			&:focus,
+			&:hover {
+				color: $blue;
+			}
+	}
 }
 
 .desc p {
@@ -525,7 +548,8 @@ footer a[rel="author"] {
 		margin-bottom: 1em;
 	}
 	p {
-		font-size:1.142857143
+		font-size:1.142857143;
+		@include nova;
 	}
 }
 
@@ -552,29 +576,33 @@ footer a[rel="author"] {
 	padding: 0;
 	margin: 0;
 	list-style: none outside none;
-
-	}
+}
 	.project-details {
 		@include group;
-		padding: 1em 0;
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		background: rgba(0,0,0,0.75);
 		color: #fff;
-		top: 300px;
+		top: 0;
 		left: 0;
+		opacity: 0;
 		z-index: 100;
-		display: none;
-		visibility: hidden;
+
+		@include prefix(transition, opacity 0.3s ease-in-out);
+
 		h3 {
 			font-weight: 700;
 			@include nova;
 			font-size: 1em;
 			text-transform: uppercase;
-			padding: .5em;
-			margin-top: .5em;
 			line-height: 1.25em;
+			position: absolute;
+			bottom: 12%;
+			left: 0;
+			opacity: 0;
+			width: 100%;
+			@include prefix(transition, 'opacity 0.3s ease-in-out');
 		}
 		li {
 			position: relative;
@@ -597,8 +625,8 @@ footer a[rel="author"] {
 
 
 .project-title {
-	text-align: center;
 	font-size: .84em;
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	line-height: 1em;
@@ -606,11 +634,15 @@ footer a[rel="author"] {
 
 
 
-.portfolio-list a:hover {
+.portfolio-list a:hover,
+.portfolio-list a:focus{
 	.project-details {
-		display: block;
-		visibility: visible;
-		top: 0;
+		opacity: 1;
+		@include prefix(transition, opacity 0.3s ease-in-out);
+	}
+	h3 {
+		opacity: 1;
+		@include prefix(transition, opacity 0.3s ease-in-out);;
 	}
 }
 
@@ -676,7 +708,7 @@ footer a[rel="author"] {
 	padding: 1em 0 0;
 }
 
-.content-body p.intro-text {
+.content-body .intro-text {
 	 font-size: 1.33333333333333em;
 	 line-height: 1.5em;
 }
@@ -731,28 +763,21 @@ aside h2 {
 		 padding-left: 0;
 	 }
 	 li {
-		 width: 12.571428571%;
-		 margin-left: 2%;
+		 width: 14.285714286%;
 		 float: left;
-		 &:first-child {
-			 margin-left: 0;
-		 }
 	 }
 	 a {
 		 display: block;
-		 padding: 0.75em 0 0.75em 0;
-		 margin-bottom: 0.75em;
 		 position: relative;
 		 border: none;
 		 text-align: center;
-		 font-size: .761904762em;
-		 line-height: 1.2em;
-		 color: $grey;
+		 color: #fff;
 	 }
 	 i {
-		 font-size: 2.666666666em;
+		 font-size: 1em;
 		 display: block;
 		 line-height: 1em;
+		 padding: .7em .5em .5em
 	 }
 	 span {
 		 display: none;
@@ -910,59 +935,66 @@ aside h2 {
 
 
 a.lastfm i {
-	 color: $lastfm;
+	 background-color: $lastfm;
 }
 
-a:hover.lastfm i {
- 	color: darken($lastfm, 15%);
+a:hover.lastfm i,
+a:focus.lastfm i  {
+ 	background-color: darken($lastfm, 15%);
 }
 
 a.dribbble i {
- 	color: $dribbble;
+ 	background-color: $dribbble;
 }
 
-a:hover.dribbble i {
- 	color: darken($dribbble, 15%);
+a:hover.dribbble i,
+a:focus.dribbble i {
+ 	background-color: darken($dribbble, 15%);
 }
 
 a.twitter i {
- 	 color: $twitter;
+ 	background-color: $twitter;
 }
 
-a:hover.twitter i {
- 	color: darken($twitter, 15%);
+a:hover.twitter i,
+a:focus.twitter i  {
+ 	background-color: darken($twitter, 15%);
 }
 
 a.flickr i {
- 	color: $flickr;
+ 	background-color: $flickr;
 }
 
-a:hover.flickr i {
- 	 color: darken($flickr, 15%);
+a:hover.flickr i,
+a:focus.flickr i {
+ 	 background-color: darken($flickr, 15%);
 }
 
 a.instagram i {
- 	color: $instagram;
+ 	background-color: $instagram;
 }
 
-a:hover.instagram i {
- 	 color: darken($instagram, 15%);
+a:hover.instagram i,
+a:focus.instagram i {
+ 	 background-color: darken($instagram, 15%);
 }
 
 a.rdio i {
- 	color: $rdio;
+ 	background-color: $rdio;
 }
 
-a:hover.rdio i {
- 	 color: darken($rdio, 15%);
+a:hover.rdio i,
+a:focus.rdio i {
+ 	 background-color: darken($rdio, 15%);
 }
 
 a.facebook i {
- 	color: $facebook;
+ 	background-color: $facebook;
 }
 
-a:hover.facebook i {
- 	 color: darken($facebook, 15%);
+a:hover.facebook i,
+a:focus.facebook i {
+ 	 background-color: darken($facebook, 15%);
 }
 
 
@@ -1080,9 +1112,17 @@ div.wpcf7-mail-sent-ok {
  * 404
  **/
  .error404 {
- 	.page-title-block.photo {
+ 	.foxy {
  		background-image: url(../img/ashfoxandkylie.jpg);
- 		background-position: center top;
+ 		background-position: center center;
+ 	}
+ 	.zissou {
+ 		background-image: url(../img/aquatic.jpg);
+ 		background-position: center center;
+ 	}
+ 	.royal {
+ 		background-image: url(../img/royal.jpg);
+ 		background-position: center center;
  	}
  	.error {
  		position: absolute;

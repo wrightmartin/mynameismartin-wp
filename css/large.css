@@ -38,12 +38,12 @@ a.home-link {
     font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, sans-serif; }
     .sitenav a:link .sub,
     .sitenav a:visited .sub {
-      -webkit-transition: opacity 0.3s ease-out;
-      -moz-transition: opacity 0.3s ease-out;
-      -o-transition: opacity 0.3s ease-out;
-      -ms-transition: opacity 0.3s ease-out;
-      transition: opacity 0.3s ease-out;
-      opacity: 0.8; }
+      -webkit-transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      -ms-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      opacity: 0.85; }
   .sitenav a:hover,
   .sitenav a:active,
   .sitenav a:focus {
@@ -53,13 +53,13 @@ a.home-link {
     .sitenav a:active .sub,
     .sitenav a:focus .sub {
       opacity: 1;
-      -webkit-transition: opacity 0.3s ease-in;
-      -moz-transition: opacity 0.3s ease-in;
-      -o-transition: opacity 0.3s ease-in;
-      -ms-transition: opacity 0.3s ease-in;
-      transition: opacity 0.3s ease-in; }
+      -webkit-transition: opacity 0.2s ease-in;
+      -moz-transition: opacity 0.2s ease-in;
+      -o-transition: opacity 0.2s ease-in;
+      -ms-transition: opacity 0.2s ease-in;
+      transition: opacity 0.2s ease-in; }
   .sitenav .main {
-    letter-spacing: 0.025em; }
+    letter-spacing: 1px; }
   .sitenav .close-menu {
     display: none;
     visibility: hidden; }
@@ -114,9 +114,6 @@ a.menu {
 .home .portfolio-list li {
   margin-bottom: 0; }
 
-.portfolio-list .project-details h3 {
-  margin-top: 1em; }
-
 .about-project {
   width: 35.625%;
   margin-right: 3%;
@@ -133,9 +130,6 @@ a.menu {
   width: 48.4477%;
   float: right;
   margin-right: 25.7238%; }
-
-.about .content-body {
-  float: left; }
 
 .blog-aside {
   float: left;
@@ -154,7 +148,7 @@ a.menu {
   clear: both; }
 
 .overshare i {
-  font-size: 6em; }
+  font-size: 4em; }
 
 .social,
 .sidebar {

@@ -21,7 +21,7 @@
 		<?php wp_head(); ?>
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<link rel="author" href="https://plus.google.com/u/0/116176995575308074443/posts"/>
+		<link rel="author" href="https://plus.google.com/116176995575308074443/"/>
 
 		<link rel="shortcut icon" href="<?php bloginfo( 'url' ); ?>/favicon.ico"/>
 
