@@ -19,7 +19,7 @@
 
 <?php
 
-    $whichPage = rand(0, 2);
+    $whichPage = rand(0, 3);
 
     switch ($whichPage) {
         case 0: ?>
@@ -48,7 +48,7 @@
             </div>
 
         </section>
-            <?php
+        <?php
             break;
         case 2: ?>
         <section class="page-title-block photo royal">
@@ -58,6 +58,20 @@
                 <div class="error">
                     <h1>404</h1>
                     <p>Hell of a damn grave. Wish it were mine.</p>
+                </div>
+            </div>
+
+        </section>
+        <?php
+            break;
+        case 3: ?>
+        <section class="page-title-block photo moonrise">
+            <div class="photo-overlay">
+            </div>
+            <div class="container">
+                <div class="error">
+                    <h1>404</h1>
+                    <p>Jiminy cricket, he flew the coop!</p>
                 </div>
             </div>
 
