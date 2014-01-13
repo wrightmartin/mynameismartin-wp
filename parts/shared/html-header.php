@@ -32,8 +32,8 @@
 				<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5shiv.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/medium.min.css" media="all and (min-width:30em)">
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/large.min.css" media="all and (min-width: 53.75em)">
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/medium.css" media="all and (min-width:30em)">
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/large.css" media="all and (min-width: 53.75em)">
 		<!--[if lt IE 9]>
 				<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/medium.min.css">
 				<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/large.min.css">
