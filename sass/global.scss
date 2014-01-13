@@ -731,15 +731,20 @@ aside h2 {
 }
 
 
-.content-body ul {
-	list-style: none outside none
+.single-post-body ul {
+	list-style: none outside none;
+	padding-left: 0.66em;
 }
 
-.content-body li {
-
+.single-post-body li {
+	margin-left: 0.66em;
+	margin-bottom: 0.33em;
 	&:before {
 		content:" • ";
-		color: transparentize($red, 0.15);
+		color: transparentize($blue, 0.15);
+		display: block;
+		float: left;
+		margin-left: -0.66em;
 	}
 }
 
