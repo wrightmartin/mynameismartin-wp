@@ -425,37 +425,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Let's fix some stuff I hate about normalize.css */
-/* no line-height declaration */
-body {
-  line-height: 1.5em; }
-
-/* top AND bottom margins? */
-h1, h2, h3, h4, h5, h6,
-p, pre, ul, ol,
-dl, menu {
-  margin: 0 0 1em 0; }
-
-/* 1/2 size of line-height */
-/* margins/padding declared in absolute units */
-dd {
-  margin: 0 0 0 2.5em; }
-
-menu, ol, ul {
-  padding: 0 0 0 2.5em; }
-
-/* responsive images */
-img {
-  max-width: 100%;
-  height: auto; }
-
-/* broken <pre> styles */
-pre {
-  word-wrap: break-word; }
-
-pre, code {
-  color: #555; }
-
 /*
  * OVERRIDE SOME BAD STUFF ABOUT NORMALIZE.CSS
  */
@@ -483,10 +452,6 @@ img {
   max-width: 100%; }
 
 /* broken <pre> styles */
-pre {
-  white-space: pre-line;
-  word-wrap: break-word; }
-
 pre, code {
   color: #555; }
 
@@ -819,7 +784,7 @@ h1.blog-post-title {
     display: inline-block;
     height: 25px;
     width: 25px;
-    background: transparent url(../img/next-prev-sprite.png) top left no-repeat;
+    background: transparent url(../img/next-prev-sprite@2.png) top left no-repeat;
     -webkit-background-size: 64px;
     -moz-background-size: 64px;
     -o-background-size: 64px;
@@ -862,7 +827,7 @@ h1.blog-post-title {
     display: inline-block;
     height: 25px;
     width: 25px;
-    background: transparent url(../img/next-prev-sprite.png) top left no-repeat;
+    background: transparent url(../img/next-prev-sprite@2.png) top left no-repeat;
     -webkit-background-size: 64px;
     -moz-background-size: 64px;
     -o-background-size: 64px;
@@ -1141,12 +1106,7 @@ footer p {
   top: 0;
   left: 0;
   opacity: 0;
-  z-index: 100;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out; }
+  z-index: 100; }
   .project-details:before, .project-details:after {
     content: "";
     display: table; }
@@ -1158,18 +1118,22 @@ footer p {
     font-size: 1em;
     text-transform: uppercase;
     line-height: 1.25em;
-    position: absolute;
-    bottom: 12%;
-    left: 0;
     opacity: 0;
-    width: 100%;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out; }
+    width: 100%; }
   .project-details li {
     position: relative; }
+
+.centred-vh {
+  display: table;
+  height: auto;
+  width: 80%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
 
 .portfolio-list a {
   position: relative;
@@ -1192,20 +1156,10 @@ footer p {
 
 .portfolio-list a:hover .project-details,
 .portfolio-list a:focus .project-details {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out; }
+  opacity: 1; }
 .portfolio-list a:hover h3,
 .portfolio-list a:focus h3 {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out; }
+  opacity: 1; }
 
 .project img {
   width: 100%; }
@@ -1275,12 +1229,19 @@ aside h2 {
   font-weight: 600;
   letter-spacing: 1px; }
 
-.content-body ul {
-  list-style: none outside none; }
+.single-post-body ul {
+  list-style: none outside none;
+  padding-left: 0.66em; }
 
-.content-body li:before {
-  content: " • ";
-  color: rgba(216, 82, 82, 0.85); }
+.single-post-body li {
+  margin-left: 0.66em;
+  margin-bottom: 0.33em; }
+  .single-post-body li:before {
+    content: " • ";
+    color: rgba(10, 189, 207, 0.85);
+    display: block;
+    float: left;
+    margin-left: -0.66em; }
 
 .blog-aside {
   margin-bottom: 2em; }
@@ -1632,6 +1593,9 @@ div.wpcf7-mail-sent-ok {
   background-position: center center; }
 .error404 .royal {
   background-image: url(../img/royal.jpg);
+  background-position: center center; }
+.error404 .moonrise {
+  background-image: url(../img/moonrise.jpg);
   background-position: center center; }
 .error404 .error {
   position: absolute;

@@ -81,6 +81,11 @@ a.menu {
 .page-title-block .main-title.blog-title {
   margin-left: 25.7238%; }
 
+.page-template-blog-php .main-title,
+.page-template-contact-php .main-title,
+.page-template-about-php .main-title {
+  margin-left: 25.7238%; }
+
 .page-title-block.photo .main-title {
   font-size: 2.619047619em; }
 @media all and (min-height: 900px) {
