@@ -26,7 +26,7 @@
 	<article>
 
 
-	 	<section class="content-body" role="main">
+	 	<section class="content-body single-post-body" role="main">
 
 
 
