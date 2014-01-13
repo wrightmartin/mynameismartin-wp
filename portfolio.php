@@ -14,18 +14,18 @@
 <?php get_template_parts( array( 'parts/shared/background-image' ) ); ?>
 
     <div class="container">
-	    
+
 	<article>
-	
-			
-	
-				 				
+
+
+
+
 		<section role="main" class="portfolio-page">
 			<ul class="portfolio-list">
-			<?php 
-			
-				
-			
+			<?php
+
+
+
 			 $loop = new WP_Query( array( 'post_type' => 'project', 'posts_per_page' => 20 ) ); ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -33,19 +33,21 @@
 			<a href="<?php echo get_permalink(); ?>">
 		 		<?php the_post_thumbnail('full');   ?>
 		 		<div class="project-details">
-		 			<h3 class="project-title">
-			 			<?php the_title(); ?>
-			 		</h3>
+		 			<div class="centred-vh">
+			 			<h3 class="project-title">
+				 			<?php the_title(); ?>
+				 		</h3>
+			 		</div>
 			 	</div>
 		 	</a>
 		</li>
-<?php endwhile; ?>	
-			
+<?php endwhile; ?>
+
 			</ul>
-			
+
 		</section>
-		
+
 </article>
     </div>
-    
+
 <?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
