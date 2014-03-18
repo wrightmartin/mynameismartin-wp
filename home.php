@@ -46,9 +46,11 @@
 				<a class="portfolio" href="<?php echo get_permalink(); ?>">
 		 			<?php the_post_thumbnail('full');   ?>
 		 			<div class="project-details">
-		 				<h3 class="project-title">
-			 			<?php the_title(); ?>
-			 			</h3>
+		 				<div class="centred-vh">
+			 				<h3 class="project-title">
+				 			<?php the_title(); ?>
+				 			</h3>
+			 			</div>
 			 		</div>
 			 	</a>
 			</li>

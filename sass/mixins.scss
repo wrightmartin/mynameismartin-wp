@@ -1,10 +1,11 @@
 
- 
+
 /*
  * Variables
  */
 
 $grey: #999;
+$midgrey: #777;
 $darkgrey: #333;
 $blue: #0ABDCF;
 $red: #d85252;
@@ -34,11 +35,11 @@ $facebook: #3B5998;
 	text-transform: uppercase;
 	width: auto;
 	-webkit-appearance: none;
-	
-	
+
+
 	&:hover,
 	&:focus,
-	&:active { 
+	&:active {
 		background: $blue;
 	}
 }
@@ -52,7 +53,7 @@ $facebook: #3B5998;
     }
     &:after {
 	    clear: both;
-    } 
+    }
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
@@ -111,7 +112,7 @@ $facebook: #3B5998;
 	&:nth-child(4n+4){
 		margin-right: 0;
 	}
-	
+
 }
 
 @mixin twoprimary-one {
@@ -136,7 +137,7 @@ $facebook: #3B5998;
 }
 
 $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
-@mixin prefix($property, $value) { 
+@mixin prefix($property, $value) {
     @each $prefix in $prefixes {
         #{$prefix}#{$property}: #{$value};
     }

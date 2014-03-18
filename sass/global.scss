@@ -577,37 +577,43 @@ footer a[rel="author"] {
 	margin: 0;
 	list-style: none outside none;
 }
-	.project-details {
-		@include group;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.75);
-		color: #fff;
-		top: 0;
-		left: 0;
+.project-details {
+	@include group;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	color: #fff;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 100;
+
+	h3 {
+		font-weight: 700;
+		@include nova;
+		font-size: 1em;
+		text-transform: uppercase;
+		line-height: 1.25em;
 		opacity: 0;
-		z-index: 100;
-
-		@include prefix(transition, opacity 0.3s ease-in-out);
-
-		h3 {
-			font-weight: 700;
-			@include nova;
-			font-size: 1em;
-			text-transform: uppercase;
-			line-height: 1.25em;
-			position: absolute;
-			bottom: 12%;
-			left: 0;
-			opacity: 0;
-			width: 100%;
-			@include prefix(transition, 'opacity 0.3s ease-in-out');
-		}
-		li {
-			position: relative;
-		}
+		width: 100%;
 	}
+	li {
+		position: relative;
+	}
+}
+.centred-vh {
+	display: table;
+	height: auto;
+	width: 80%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
 
 .portfolio-list a {
 	position: relative;
@@ -638,11 +644,9 @@ footer a[rel="author"] {
 .portfolio-list a:focus{
 	.project-details {
 		opacity: 1;
-		@include prefix(transition, opacity 0.3s ease-in-out);
 	}
 	h3 {
 		opacity: 1;
-		@include prefix(transition, opacity 0.3s ease-in-out);;
 	}
 }
 
@@ -727,15 +731,20 @@ aside h2 {
 }
 
 
-.content-body ul {
-	list-style: none outside none
+.single-post-body ul {
+	list-style: none outside none;
+	padding-left: 0.66em;
 }
 
-.content-body li {
-
+.single-post-body li {
+	margin-left: 0.66em;
+	margin-bottom: 0.33em;
 	&:before {
 		content:" • ";
-		color: transparentize($red, 0.15);
+		color: transparentize($blue, 0.15);
+		display: block;
+		float: left;
+		margin-left: -0.66em;
 	}
 }
 
@@ -1026,6 +1035,24 @@ a:focus.facebook i {
  	li {
  		margin-bottom: 1em;
  	}
+ 	img {
+ 		@include prefix(box-shadow, 0 0 8px 1px rgba(0,0,0,0.1));
+ 		border: 1px solid $lightgrey;
+ 	}
+}
+
+//turn off the shadow and border on projects with older style screenshots, #todo remove when you update them
+.shropshire-gov-uk,
+.connecting-shropshire,
+.tim-and-simon,
+.new-shropshire-gov-uk,
+.the-theory-of-revolution {
+	 .project-images {
+	 	img {
+	 		@include prefix(box-shadow, none);
+ 			border: none;
+	 	}
+	 }
 }
 
 .flexslider {

@@ -93,12 +93,20 @@ a.menu {
 }
 
 .page-title-block {
-
 	.main-title {
 		&.blog-title {
 			margin-left: 25.7238%;
 		}
 	}
+}
+
+.page-template-blog-php,
+.page-template-contact-php,
+.page-template-about-php {
+	.main-title {
+		margin-left: 25.7238%;
+	}
+
 }
 
 .page-title-block.photo {
