@@ -350,7 +350,7 @@ h1.blog-post-title {
 		letter-spacing: 0;
 		color: #333;
 		background: transparent;
-		margin-bottom: .45em;
+		margin-bottom: 1em;
 		font-size: 2em;
 		margin-right: 20%;
 		&.blog-title {
@@ -727,6 +727,7 @@ footer a[rel="author"] {
 aside h2 {
 	color: $grey;
 	margin-bottom: 0.5em;
+	margin-top: 2em;
 	@include subhead;
 }
 

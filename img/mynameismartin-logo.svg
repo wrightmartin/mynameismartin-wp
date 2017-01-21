@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="287px" height="312px" viewBox="0 0 287 312" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>mynameismartin-logoi</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M22,9 L-0.560058594,9.11230469 C-0.560058594,9.11230469 11,130.33252 11,134 C11,143.088379 22,9 22,9 Z" id="Path-2" fill="#27C0D2" sketch:type="MSShapeGroup"></path>
+        <path d="M23,312 L22,294 L143,297.976562 C143,297.976562 38.3613281,307.025391 23,312 Z" id="Path-4" fill="#27C0D2" sketch:type="MSShapeGroup"></path>
+        <path d="M22,294.133789 L-0.631835938,293.341797 L11,134 L22,294.133789 Z" id="Path-4" fill="#E42B31" sketch:type="MSShapeGroup"></path>
+        <path d="M23.0935059,0.125 L22,9 L143,5 L23.0935059,0.125 Z" id="Path-5" fill="#EC4545" sketch:type="MSShapeGroup"></path>
+        <path d="M286.560059,9 L264,9.11230469 C264,9.11230469 275.560059,130.33252 275.560059,134 C275.560059,143.088379 286.560059,9 286.560059,9 Z" id="Path-9" fill="#EC4545" sketch:type="MSShapeGroup" transform="translate(275.280029, 71.720987) scale(-1, 1) translate(-275.280029, -71.720987) "></path>
+        <path d="M144,312 L143,294 L264,297.976562 C264,297.976562 159.361328,307.025391 144,312 Z" id="Path-6" fill="#EC4545" sketch:type="MSShapeGroup" transform="translate(203.500000, 303.000000) scale(-1, 1) translate(-203.500000, -303.000000) "></path>
+        <path d="M286.631836,294.133789 L264,293.341797 L275.631836,134 L286.631836,294.133789 Z" id="Path-7" fill="#27C0D2" sketch:type="MSShapeGroup" transform="translate(275.315918, 214.066895) scale(-1, 1) translate(-275.315918, -214.066895) "></path>
+        <path d="M144.093506,0.125 L143,9 L264,5 L144.093506,0.125 Z" id="Path-8" fill="#27C0D2" sketch:type="MSShapeGroup" transform="translate(203.500000, 4.562500) scale(-1, 1) translate(-203.500000, -4.562500) "></path>
+        <path d="M22,9 C22,9 101.060211,5.22033408 143,5 L143,298 C138.266549,297.987193 96.6319244,296.626785 96.6319244,296.626785 L22,294 L11,134 L22,9 Z M264,9 C264,9 184.939789,5.22033408 143,5 L143,298 C147.733451,297.987193 189.368076,296.626785 189.368076,296.626785 L264,294 L275,134 L264,9 Z" id="Path-1" fill="#0C272B" sketch:type="MSShapeGroup"></path>
+        <text id="M" sketch:type="MSTextLayer" font-family="Myriad Pro" font-size="212" font-weight="bold" fill="#FFFFFF">
+            <tspan x="54" y="219">M</tspan>
+        </text>
+    </g>
+</svg>

@@ -16,7 +16,7 @@
 
     <div class="container">
 
-	 <article>
+	 <article class="about-article">
 
 	 	<section class="content-body">
 

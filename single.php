@@ -23,7 +23,7 @@
 
     <div class="container">
 
-	<article>
+	<article class="single-post-article">
 
 
 	 	<section class="content-body single-post-body" role="main">

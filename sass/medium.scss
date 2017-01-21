@@ -3,7 +3,7 @@
 
 
 body {
-	font-size: 1.3125em; /*21px*/
+	font-size: 1.25em; /*21px*/
 }
 
 p {
@@ -199,4 +199,10 @@ img.pull-right {
 	li {
 		@include twocolumn;
 	}
+}
+
+.about-article,
+.contact-article,
+.single-post-article {
+	margin-top: 1.5em;
 }
