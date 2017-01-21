@@ -31,7 +31,7 @@
 		<!--[if lt IE 9]>
 				<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/html5shiv.js"></script>
 		<![endif]-->
-
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400,400i,700" rel="stylesheet">
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/medium.css" media="all and (min-width:30em)">
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/large.css" media="all and (min-width: 64em)">
 		<!--[if lt IE 9]>
@@ -42,5 +42,3 @@
 
 	</head>
 	<body <?php body_class(); ?> <?php if (get_field('background_image') || is_front_page() || is_404())  { ?> id="photo" <?php  } else {?>id="no-photo"<?php  } ?>>
-
-
